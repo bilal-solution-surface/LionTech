@@ -1,0 +1,116 @@
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY3VzdG9tLmNzcyIsInNvdXJjZXMiOlsiY3VzdG9tLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiJ9 */
+
+/*# sourceMappingURL=custom.css.map */
+
+
+/* ======================General Styling===================== */
+
+.add-more-btn{
+    margin-top: 1.9rem;
+}
+
+h4{
+    color: #000;
+    font-size: 20px;
+}
+
+a {
+    color: #0067B2;
+    font-weight: 500;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.table.table-bordered td{border-color: #00000030 !important;}
+
+.table.table-bordered th{border-color: #fff !important;}
+
+.modal-heading{
+    color: #0067B2;
+}
+
+.modal-content{
+    background: #E6F0F8;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+body{
+    background-color: #ffffff !important;
+}
+
+#save-stage_length {
+    display: none !important;
+}
+
+#save-stage_filter{
+    display: none !important;
+}
+
+.theme-white .page-item.active .page-link {
+    color: #484646;
+    background-color: #fff;
+    border-color: #484646;
+}
+
+.theme-white .page-item .page-link {
+    color: #C4CDD5;
+}
+
+.theme-white .form-control:focus {
+    border-color: #0067b2;
+}
+
+.form-control:focus, .input-group-text:focus, .custom-select:focus, .custom-file-label:focus {
+    border-color: #0067b2;
+}
+
+.shift-table-fields{
+    font-size: 1rem;
+    padding: 13px 15px;
+    height: 23px;
+    margin: 0px 35px 0px 0px;
+    width: 4rem;
+}
+
+.chat-box .chat-content .chat-item.chat-right .chat-details .chat-text {
+    background-color: #0067b2;
+}
+
+.chat .chat-header {
+    background: #0067b2;
+}
+
+.chat-box .chat-content{
+    background-color: #e6f0f8 !important;
+}
+
+.badge.badge-primary {
+    background-color: #0067b2;
+    border-radius: 5px !important;
+    padding: 10px;
+}
+
+.badge.badge-secondary {
+    background-color: #34395e5c;
+    border-radius: 5px !important;
+    padding: 10px;
+}
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+}
+
+.theme-white .card.card-primary {
+    border-top: 2px solid #0067b2;
+}
+
+.light-sidebar .main-sidebar .sidebar-menu li ul.dropdown-menu li.active>a {
+    color: #0067b2;
+    font-weight: 700;
+}
