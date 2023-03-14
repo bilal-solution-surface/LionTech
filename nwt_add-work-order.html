@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- index.html  21 Nov 2019 03:44:50 GMT -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>NWT - ADMIN DASHBOARD </title>
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="assets/css/app.min.css">
+  <link rel="stylesheet" href="assets/bundles/bootstrap-daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="assets/bundles/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+  <link rel="stylesheet" href="assets/bundles/select2/dist/css/select2.min.css">
+  <link rel="stylesheet" href="assets/bundles/jquery-selectric/selectric.css">
+  <link rel="stylesheet" href="assets/bundles/bootstrap-timepicker/css/bootstrap-timepicker.min.css">
+  <link rel="stylesheet" href="assets/bundles/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <!-- Custom style CSS -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <link rel='shortcut icon' type='image/x-icon' href='assets/img/nwt-favicon.png' />
+</head>
+
+<body>
+  <div class="loader"></div>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar-bg"></div>
+      <nav class="navbar navbar-expand-lg main-navbar sticky">
+        <div class="form-inline mr-auto">
+          <ul class="navbar-nav mr-3">
+            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg
+									collapse-btn"> <i data-feather="align-justify"></i></a></li>
+          </ul>
+        </div>
+        <ul class="navbar-nav navbar-right">
+          <li class="dropdown"><a href="#" data-toggle="dropdown"
+              class="nav-link dropdown-toggle nav-link-lg nav-link-user"> <img alt="image" src="assets/img/user.png"
+                class="user-img-radious-style"> <span class="d-sm-none d-lg-inline-block"></span></a>
+            <div class="dropdown-menu dropdown-menu-right pullDown">
+              <div class="dropdown-title">Hello John Mickwade</div>
+              <a href="#" class="dropdown-item has-icon"> <i class="far
+										fa-user"></i> Profile
+              </a> <a href="#" class="dropdown-item has-icon"> <i class="fas fa-bolt"></i>
+                Activities
+              </a> <a href="#" class="dropdown-item has-icon"> <i class="fas fa-cog"></i>
+                Settings
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item has-icon text-danger"> <i class="fas fa-sign-out-alt"></i>
+                Logout
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="index.html"><img alt="image" src="assets/img/nwt-logo3.png" class="header-logo" /><span
+                class="logo-name"></span>
+            </a>
+          </div>
+          <ul class="sidebar-menu">
+            <li class="menu-header">Admin Sidebar</li>
+            <li class="dropdown">
+              <a href="index.html" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="menu-toggle nav-link has-dropdown"><i
+                class="fa fa-user-secret"></i><span>Guards</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="guards-list.html">Guards List</a></li>
+                <li><a class="nav-link" href="add-guard.html">Add a Guard</a></li>
+                <li><a class="nav-link" href="guards-map.html">Guards Map</a></li>
+              </ul>
+            </li>
+            <li class="dropdown active">
+              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="layout"></i><span>Work
+                  Orders</span></a>
+              <ul class="dropdown-menu">
+                <li class="active"><a class="nav-link" href="add-work-order.html">Add Work Order</a></li>
+                <li><a class="nav-link" href="work-orders.html">Work Orders</a></li>
+                <li><a class="nav-link" href="messages.html">Messages</a></li>
+              </ul>
+            </li>
+            <li><a class="nav-link" href="payroll.html"><i class="fa fa-list-alt"></i><span>Payroll</span></a></li>
+            <li><a class="nav-link" href="pictures.html"><i class="fa fa-image"></i><span>Pictures</span></a></li>
+            <li><a class="nav-link" href="notifications.html"><i class="fa fa-envelope"></i><span>Notifications</span></a></li>
+          </ul>
+        </aside>
+      </div>
+      <!-- Main Content -->
+      <div class="main-content">
+        <section class="section">
+          <div class="section-body">
+            <div class="row">
+              <div class="col-12 col-md-12 col-lg-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Add work order</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 mb-2">
+                        <h4>Site Details</h4>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="form-group">
+                          <label>Site Name</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="form-group">
+                          <label>Point of Contact Name</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="form-group">
+                          <label>Point of Contact Cell Number</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                        <div class="form-group">
+                          <label>Address</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="form-group">
+                          <label>City</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="form-group">
+                          <label>State</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="form-group">
+                          <label>Zip Code</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="form-group">
+                          <label>Work Order Ref. No</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="form-group">
+                          <label>Start Date</label>
+                          <input type="datetime-local" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="form-group">
+                          <label>End Date</label>
+                          <input type="datetime-local" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="form-group">
+                          <label>Choose Shift</label>
+                          <div class="input-group mb-3">
+                            <select class="custom-select" id="inputGroupSelect04">
+                              <option selected>Select...</option>
+                              <option value="1">Morning Shift</option>
+                              <option value="2">Evening Shift</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 mb-3 mt-5">
+                        <h4>Supervisor</h4>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="form-group">
+                          <label>Name</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="form-group">
+                          <label>Cell Number</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="form-group">
+                          <label>Email</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="form-group">
+                          <label>Guard Name</label>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="form-group">
+                          <label>Type</label>
+                          <div class="input-group">
+                            <select class="custom-select" id="inputGroupSelect04">
+                              <option selected>Choose...</option>
+                              <option value="1">Armed</option>
+                              <option value="2">Un-Armed</option>
+                              <option value="3">Fire-Watch</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="form-group">
+                          <label>Hourly Rate</label>
+                          <input type="text" class="form-control mb-3">
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="form-group">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="form-group">
+                          <div class="input-group">
+                            <select class="custom-select" id="inputGroupSelect04">
+                              <option selected>Choose...</option>
+                              <option value="1">Armed</option>
+                              <option value="2">Un-Armed</option>
+                              <option value="3">Fire-Watch</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4 d-flex">
+                        <div class="form-group">
+                          <input type="text" class="form-control">
+                        </div>
+                        <div>
+                          <a href="#" class="p-2"><i class="fa fa-trash"></i></a>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="form-group">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="form-group">
+                          <div class="input-group">
+                            <select class="custom-select" id="inputGroupSelect04">
+                              <option selected>Choose...</option>
+                              <option value="1">Armed</option>
+                              <option value="2">Un-Armed</option>
+                              <option value="3">Fire-Watch</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-4 col-lg-4 d-flex">
+                        <div class="form-group">
+                          <input type="text" class="form-control">
+                        </div>
+                        <div>
+                          <a href="#" class="p-2"><i class="fa fa-trash"></i></a>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <a href="#" class="btn btn-lg btn-success mt-1 px-5"> Add More </a>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-12 col-lg-12 mt-5 mb-3">
+                        <h4>Add Shift Days </h4>
+                        <div class="table-responsive">
+                          <table class="table table-hover table-bordered mt-3 overflow-hidden">
+                            <thead>
+                              <tr>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                                <th>Saturday</th>
+                                <th>Sunday</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="p-2">
+                                  <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                      Start
+                                      <input type="text" class="shift-table-fields">
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                      End
+                                      <input type="text" class="shift-table-fields">
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="p-2">
+                                  <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                      Start
+                                      <input type="text" class="shift-table-fields">
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                      End
+                                      <input type="text" class="shift-table-fields">
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="p-2">
+                                  <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                      Start
+                                      <input type="text" class="shift-table-fields">
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                      End
+                                      <input type="text" class="shift-table-fields">
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="p-2">
+                                  <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                      Start
+                                      <input type="text" class="shift-table-fields">
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                      End
+                                      <input type="text" class="shift-table-fields">
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="p-2">
+                                  <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                      Start
+                                      <input type="text" class="shift-table-fields">
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                      End
+                                      <input type="text" class="shift-table-fields">
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="p-2">
+                                  <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                      Start
+                                      <input type="text" class="shift-table-fields">
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                      End
+                                      <input type="text" class="shift-table-fields">
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="p-2">
+                                  <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                      Start
+                                      <input type="text" class="shift-table-fields">
+                                    </div>
+                                    <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                                      End
+                                      <input type="text" class="shift-table-fields">
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 mt-3">
+                        <p>Upload Work Order</p>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="customFile">
+                          <label class="custom-file-label" for="customFile">Choose File</label>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5">
+                        <a href="#" class="btn btn-lg px-3 btn-success"> Add Work Order </a>
+                        <a href="#" class="btn btn-lg px-5 btn-danger ml-3"> Cancel </a>
+                      </div>
+                      <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- <div class="settingSidebar">
+          <a href="javascript:void(0)" class="settingPanelToggle"> <i class="fa fa-spin fa-cog"></i>
+          </a>
+          <div class="settingSidebar-body ps-container ps-theme-default">
+            <div class=" fade show active">
+              <div class="setting-panel-header">Setting Panel
+              </div>
+              <div class="p-15 border-bottom">
+                <h6 class="font-medium m-b-10">Select Layout</h6>
+                <div class="selectgroup layout-color w-50">
+                  <label class="selectgroup-item">
+                    <input type="radio" name="value" value="1" class="selectgroup-input-radio select-layout" checked>
+                    <span class="selectgroup-button">Light</span>
+                  </label>
+                  <label class="selectgroup-item">
+                    <input type="radio" name="value" value="2" class="selectgroup-input-radio select-layout">
+                    <span class="selectgroup-button">Dark</span>
+                  </label>
+                </div>
+              </div>
+              <div class="p-15 border-bottom">
+                <h6 class="font-medium m-b-10">Sidebar Color</h6>
+                <div class="selectgroup selectgroup-pills sidebar-color">
+                  <label class="selectgroup-item">
+                    <input type="radio" name="icon-input" value="1" class="selectgroup-input select-sidebar">
+                    <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip"
+                      data-original-title="Light Sidebar"><i class="fas fa-sun"></i></span>
+                  </label>
+                  <label class="selectgroup-item">
+                    <input type="radio" name="icon-input" value="2" class="selectgroup-input select-sidebar" checked>
+                    <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip"
+                      data-original-title="Dark Sidebar"><i class="fas fa-moon"></i></span>
+                  </label>
+                </div>
+              </div>
+              <div class="p-15 border-bottom">
+                <h6 class="font-medium m-b-10">Color Theme</h6>
+                <div class="theme-setting-options">
+                  <ul class="choose-theme list-unstyled mb-0">
+                    <li title="white" class="active">
+                      <div class="white"></div>
+                    </li>
+                    <li title="cyan">
+                      <div class="cyan"></div>
+                    </li>
+                    <li title="black">
+                      <div class="black"></div>
+                    </li>
+                    <li title="purple">
+                      <div class="purple"></div>
+                    </li>
+                    <li title="orange">
+                      <div class="orange"></div>
+                    </li>
+                    <li title="green">
+                      <div class="green"></div>
+                    </li>
+                    <li title="red">
+                      <div class="red"></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="p-15 border-bottom">
+                <div class="theme-setting-options">
+                  <label class="m-b-0">
+                    <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input"
+                      id="mini_sidebar_setting">
+                    <span class="custom-switch-indicator"></span>
+                    <span class="control-label p-l-10">Mini Sidebar</span>
+                  </label>
+                </div>
+              </div>
+              <div class="p-15 border-bottom">
+                <div class="theme-setting-options">
+                  <label class="m-b-0">
+                    <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input"
+                      id="sticky_header_setting">
+                    <span class="custom-switch-indicator"></span>
+                    <span class="control-label p-l-10">Sticky Header</span>
+                  </label>
+                </div>
+              </div>
+              <div class="mt-4 mb-4 p-3 align-center rt-sidebar-last-ele">
+                <a href="#" class="btn btn-icon icon-left btn-primary btn-restore-theme">
+                  <i class="fas fa-undo"></i> Restore Default
+                </a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+      <footer class="main-footer">
+        <div class="footer-left">
+          <a href="#">NWT- ADMIN DASHBOARD</a>
+        </div>
+        <div class="footer-right">
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!-- General JS Scripts -->
+  <script src="assets/js/app.min.js"></script>
+  <!-- JS Libraies -->
+  <script src="assets/bundles/cleave-js/dist/cleave.min.js"></script>
+  <script src="assets/bundles/cleave-js/dist/addons/cleave-phone.us.js"></script>
+  <script src="assets/bundles/jquery-pwstrength/jquery.pwstrength.min.js"></script>
+  <script src="assets/bundles/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <script src="assets/bundles/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+  <script src="assets/bundles/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+  <script src="assets/bundles/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+  <script src="assets/bundles/select2/dist/js/select2.full.min.js"></script>
+  <script src="assets/bundles/jquery-selectric/jquery.selectric.min.js"></script>
+  <!-- Page Specific JS File -->
+  <script src="assets/js/page/forms-advanced-forms.js"></script>
+  <!-- Template JS File -->
+  <script src="assets/js/scripts.js"></script>
+  <!-- Custom JS File -->
+  <script src="assets/js/custom.js"></script>
+</body>
+
+
+<!-- forms-advanced-form.html  21 Nov 2019 03:55:08 GMT -->
+
+</html>

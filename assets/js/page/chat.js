@@ -1,4 +1,4 @@
-"use strict";
+ "use strict";
 
 $.chatCtrl = function (element, chat) {
   var chat = $.extend({
